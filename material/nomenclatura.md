@@ -10,9 +10,9 @@ Cardinalidade:
 
 Simbologia | Relação
 ---- | ----
-1 : 1 | um pra um
-1 : M | um pra muitos
-M : M | muito para muitos
+1 : 1 | um para um
+1 : M | um para muitos
+M : M | muitos para muitos
 
 ## Tips:
 
