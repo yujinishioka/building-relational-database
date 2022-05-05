@@ -1,0 +1,9 @@
+Database
+
+1 forma normal:
+	Processo para eliminar erros
+	Ex-1: telefones (cadastrar varios numeros de telefones para a mesma pessoa)
+	Ex-2: nota fiscal (NF(PK), Atendente, Data, Local) -> item (NF(FK), num. item, preço)
+
+2 forma normal:
+	Só pode ser usada se tiver Chave Primária Composta
