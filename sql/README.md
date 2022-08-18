@@ -39,8 +39,9 @@ Ordenar do menor para o maior: **ASC**
 ``` sql
 ORDER BY <nome da coluna> ASC
 ```
+
 Ordenar do maior para o menor: **DESC**
-```
+``` sql
 ORDER BY <nome da coluna> DESC
 ```
 
