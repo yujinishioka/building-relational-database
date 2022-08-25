@@ -41,13 +41,8 @@ ORDER BY <nome da coluna> ASC;
 ```
 
 Ordenar do maior para o menor: **DESC**
-<<<<<<< HEAD
-```
-ORDER BY <nome da coluna> DESC;
-=======
 ``` sql
 ORDER BY <nome da coluna> DESC
->>>>>>> dfe8957fd8e064d89f57880c7409fbe8c8699df7
 ```
 
 Remover duplicidade: **DISTINCT**
@@ -62,7 +57,6 @@ SELECT <nome da coluna> || 'gmail.com';
 
 Mostra a estrutura da tabela: **DESCRIBE**
 ``` sql
-<<<<<<< HEAD
 DESCRIBE <nome da tabela>;
 ```
 
@@ -128,7 +122,3 @@ um comentario
 
 rem mais um comentario
 ```
-=======
-DESCRIBE <nome da tabela>
-```
->>>>>>> dfe8957fd8e064d89f57880c7409fbe8c8699df7
