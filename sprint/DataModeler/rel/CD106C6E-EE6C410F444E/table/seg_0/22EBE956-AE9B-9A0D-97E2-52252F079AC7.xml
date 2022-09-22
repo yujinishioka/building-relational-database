@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22EBE956-AE9B-9A0D-97E2-52252F079AC7" name="Vaga">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>C2CE4A64-F786-0FEC-02B8-D69054D0E9FF</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<ordsAlias>vagas</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vaga" id="B8205FFB-7946-EB29-259A-A6662B1484DE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>0E1E12F5-1CC8-652C-C8ED-14F40173BF41</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="91F10923-671A-1E80-8390-1E8EBD92B43F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>A4D568A2-29FB-7C3B-4679-97952AAC8F06</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario" id="0EC4BCF2-30C9-E81D-DFB7-C096E56E12AC">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>40956DAF-183A-9A33-5516-893AB6BB429B</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Empresa_id_empresa" id="4AC23380-E5C0-B000-FF5D-4AD4BC1B64C1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>A22397EC-2AC8-6631-D099-B8E10E2F61EE</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01FB9250-8DB0-C0D7-98DA-0ECD78DF7295" referredColumn="456787D9-A41A-D14D-3FE0-1920A49EDBA7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B239BE89-EFED-B575-B777-918AD12CD9CE" name="Vagas_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>A1500A30-4147-CD15-26F8-AADB2CC6F438</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8205FFB-7946-EB29-259A-A6662B1484DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD4762FB-7333-1A09-3329-195F99DD4AC7" name="Vagas_Empresa_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>1E465554-532E-CB73-1673-BE66AEBFDA86</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC23380-E5C0-B000-FF5D-4AD4BC1B64C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

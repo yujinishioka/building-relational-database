@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01FB9250-8DB0-C0D7-98DA-0ECD78DF7295" containerWithKeyObject="22EBE956-AE9B-9A0D-97E2-52252F079AC7" localFKIndex="BD4762FB-7333-1A09-3329-195F99DD4AC7" name="Vagas_Empresa_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>1E465554-532E-CB73-1673-BE66AEBFDA86</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<referredTableLongName>Empresa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6EA2071C-C0BC-8C71-6111-7714E83DEE84</referredTableID>
+<keyObject>69C4B042-D294-C745-16C3-217F0174DC48</keyObject>
+<referredKeyID>69C4B042-D294-C745-16C3-217F0174DC48</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

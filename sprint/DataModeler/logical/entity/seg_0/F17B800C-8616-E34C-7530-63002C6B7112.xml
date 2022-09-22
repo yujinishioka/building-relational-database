@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F17B800C-8616-E34C-7530-63002C6B7112" name="Candidato_Curso">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:43:25 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_candidato_curso" id="6B9E4BC7-BA7C-181F-D0F4-F819F68E3A20">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:51:36 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_candidato" id="27D32D38-4D86-2656-CC9B-A2123403C420">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:48:25 UTC</createdTime>
+<generatorID>B5DFF9E7-E08E-C84A-8FA9-A889E1290A02</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<referedAttribute>B609FAFA-C457-4742-88CF-E890096CAE56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_curso" id="3584A0B6-814F-E411-ED73-D413EF13CE39">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:50:50 UTC</createdTime>
+<generatorID>CCDA69C1-480A-0A05-3A77-B37D0CC1B0EA</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<referedAttribute>05DFF783-976F-FB64-643B-C04EB77BC428</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE2CB76A-F239-175F-4496-0122F78A14F3" name="Candidato_Curso PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:51:51 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B9E4BC7-BA7C-181F-D0F4-F819F68E3A20</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03F5589E-CDD5-6151-9EE6-D8D70CB3B4EF" name="Curso">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>521369E3-99A4-C0E9-22E3-9D3A4EEEDD18</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<ordsAlias>cursos</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_curso" id="BF2914CD-DBA3-1FDB-B189-3FD2109784B1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>05DFF783-976F-FB64-643B-C04EB77BC428</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_curso" id="415D2AC9-7900-C539-5C5B-2FC312114FB7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>79567D24-9E0E-09C4-7E77-AB0F48882CB8</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="C7E33FA4-57F6-D545-D0B0-F19115E6DFE3">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>33B3A355-3822-8198-9737-0AB8D8EB0862</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco" id="3E073F2E-12A3-F5CB-C39E-79263C054C43">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>D99ECD91-3424-2305-4EDA-AC82C8F24733</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C57FC679-5FF0-A24C-0D2B-AC3E3DF0C170" name="Cursos_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>C69020B7-574F-7DC8-668F-7329AC39D96B</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF2914CD-DBA3-1FDB-B189-3FD2109784B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

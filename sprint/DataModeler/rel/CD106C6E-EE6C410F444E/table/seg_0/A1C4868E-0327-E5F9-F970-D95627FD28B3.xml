@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1C4868E-0327-E5F9-F970-D95627FD28B3" name="Vaga_Questionario">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>2A04FDC2-C7CF-99FD-7A27-E882E5A1B419</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vaga_questionario" id="C6CA64AD-E17F-BED7-F159-D6087B7C7D15">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>8CC8F663-A2F4-33BD-1ECA-30FE01C57394</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vagas_id_vaga" id="097E739C-259F-70B0-3215-84798451A296">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>A1339FA9-285A-A3C3-9368-2E9B879C2DBC</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFFA875B-301F-986C-80B9-21BB02C49C3E" referredColumn="B8205FFB-7946-EB29-259A-A6662B1484DE"/>
+</associations>
+</Column>
+<Column name="Questionario_id_questionario" id="B320DEF7-90D7-859E-032B-3C037311336F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>FEC73F41-053D-FF49-18F0-503EC26C34B0</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="031CF8A3-631F-A23B-B4F4-C05383338EE9" referredColumn="0E26BF6D-19AD-C6C8-9B73-FEBC96F40946"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A4A755A-E666-A660-09A5-18E46048DCE3" name="Vaga_Questionario_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>2F435A8C-F95F-7FA0-D639-645A9CDFE507</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6CA64AD-E17F-BED7-F159-D6087B7C7D15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="446655F1-5D67-7177-D47F-FF274FFBA923" name="Vaga_Questionario_Vagas_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>EDE0D84E-10EE-8D1A-6FA3-049BE593AB23</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="097E739C-259F-70B0-3215-84798451A296"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="853E9EF9-786D-4F26-76B0-5CEF0A536C02" name="Vaga_Questionario_Questionario_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>00C516EC-FCC2-09C5-37B3-B3AC0353DF76</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B320DEF7-90D7-859E-032B-3C037311336F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54797E9C-4616-1FF7-2ED2-C6D4305C9B98" name="Candidato_Vaga">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:43:39 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_candidato_vaga" id="AF2D5323-B998-2D7B-6FFE-E7F522D4629E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:52:24 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_candidato" id="F2A74736-2D47-79C3-E07B-1550F35030B8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:48:25 UTC</createdTime>
+<generatorID>8586EB68-0724-DB2C-E90F-7F9EC7CCC78D</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<referedAttribute>B609FAFA-C457-4742-88CF-E890096CAE56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_vaga" id="275FF686-7DDB-896E-49A4-C837C2EC4BDD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:52:18 UTC</createdTime>
+<generatorID>CF173F3C-FA9E-C151-0E4B-40B38E359B57</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<referedAttribute>0E1E12F5-1CC8-652C-C8ED-14F40173BF41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB7A6BA1-2F4E-7D1F-971F-BAC7181068CD" name="Candidato_Vaga PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-21 22:52:38 UTC</createdTime>
+<ownerDesignName>DataModeler</ownerDesignName>
+<engineerTo>
+<item key="CD106C6E-FE4E-5553-89A7-EE6C410F444E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF2D5323-B998-2D7B-6FFE-E7F522D4629E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

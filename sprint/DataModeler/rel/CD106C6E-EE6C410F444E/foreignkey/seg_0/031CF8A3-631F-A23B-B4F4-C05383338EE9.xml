@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="031CF8A3-631F-A23B-B4F4-C05383338EE9" containerWithKeyObject="A1C4868E-0327-E5F9-F970-D95627FD28B3" localFKIndex="853E9EF9-786D-4F26-76B0-5CEF0A536C02" name="Vaga_Questionario_Questionario_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>00C516EC-FCC2-09C5-37B3-B3AC0353DF76</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<referredTableLongName>Questionario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>70BEBD6F-32D7-D3AB-A80A-61E1B0AB9CEB</referredTableID>
+<keyObject>16EBC129-36A3-2140-28B5-7F859EFCEA6F</keyObject>
+<referredKeyID>16EBC129-36A3-2140-28B5-7F859EFCEA6F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_questionario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

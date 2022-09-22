@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25D4CAD4-A866-BF9A-BE1D-9C8B4FFE6256" name="Candidato_Curso">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>F17B800C-8616-E34C-7530-63002C6B7112</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_candidato_curso" id="3E98CE21-EC73-2C0D-2D46-42432F684005">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>6B9E4BC7-BA7C-181F-D0F4-F819F68E3A20</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Candidato_id_candidato" id="9E124062-9156-1FC6-2363-DC1DD587B6EE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>27D32D38-4D86-2656-CC9B-A2123403C420</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="316F0B79-D7D6-D0A1-5523-D10072CE8337" referredColumn="CDEF0C08-9BB9-5443-49A5-F7287462F5F1"/>
+</associations>
+</Column>
+<Column name="Cursos_id_curso" id="91A9B7A9-ABF3-80A5-0D78-0A3A47AA41B8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>3584A0B6-814F-E411-ED73-D413EF13CE39</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E14274D-935F-3A57-28D9-B6B918ACF21D" referredColumn="BF2914CD-DBA3-1FDB-B189-3FD2109784B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86DE2AD5-09A2-C9C3-921C-2AA03D252CDE" name="Candidato_Curso_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>DE2CB76A-F239-175F-4496-0122F78A14F3</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E98CE21-EC73-2C0D-2D46-42432F684005"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F81A57EE-2B69-7D45-C920-387F0478617A" name="Candidato_Curso_Candidato_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>B5DFF9E7-E08E-C84A-8FA9-A889E1290A02</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E124062-9156-1FC6-2363-DC1DD587B6EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3793021-5BB2-2489-8C66-E52BCFE62697" name="Candidato_Curso_Cursos_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>CCDA69C1-480A-0A05-3A77-B37D0CC1B0EA</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91A9B7A9-ABF3-80A5-0D78-0A3A47AA41B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

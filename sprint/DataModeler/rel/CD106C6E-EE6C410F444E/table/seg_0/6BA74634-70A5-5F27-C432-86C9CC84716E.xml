@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BA74634-70A5-5F27-C432-86C9CC84716E" name="Candidato_Vaga">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>54797E9C-4616-1FF7-2ED2-C6D4305C9B98</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_candidato_vaga" id="5B8DA899-9DDA-5FF3-3B7C-87C6FFCB5D2C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>AF2D5323-B998-2D7B-6FFE-E7F522D4629E</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Candidato_id_candidato" id="80721719-E1C7-67B4-AB80-F67B2DE41F00">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>F2A74736-2D47-79C3-E07B-1550F35030B8</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2F1E409-D109-178A-13A6-0A7F5315D267" referredColumn="CDEF0C08-9BB9-5443-49A5-F7287462F5F1"/>
+</associations>
+</Column>
+<Column name="Vagas_id_vaga" id="693B0EE2-2E1D-3CF6-F5A4-948EE60D73F9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>275FF686-7DDB-896E-49A4-C837C2EC4BDD</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C17A70B-B24B-B003-56F1-368102BDA4BE" referredColumn="B8205FFB-7946-EB29-259A-A6662B1484DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5E794C7-A5CC-8FA4-9804-88A212DBB25F" name="Candidato_Vaga_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>BB7A6BA1-2F4E-7D1F-971F-BAC7181068CD</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B8DA899-9DDA-5FF3-3B7C-87C6FFCB5D2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25B43E5F-6C5D-0176-C57A-DA0803430BBF" name="Candidato_Vaga_Candidato_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>8586EB68-0724-DB2C-E90F-7F9EC7CCC78D</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80721719-E1C7-67B4-AB80-F67B2DE41F00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32E90EA3-8B49-FA2D-5E63-E6D2FC92D12A" name="Candidato_Vaga_Vagas_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-09-22 00:24:48 UTC</createdTime>
+<generatorID>CF173F3C-FA9E-C151-0E4B-40B38E359B57</generatorID>
+<ownerDesignName>DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="693B0EE2-2E1D-3CF6-F5A4-948EE60D73F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
