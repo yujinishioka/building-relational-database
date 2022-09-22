@@ -174,6 +174,122 @@ SELECT NEXT_DAY(ADD_MONTHS(SYSDATE,3),'FRIDAY') FROM <nome da tabela>;
 SELECT NEXT_DAY(LAST_DAY(SYSDATE),'MONDAY') FROM <nome da tabela>;
 ```
 
+Juntando Tabelas: **JOIN**'s
+* NATURAL JOIN
+``` sql
+    /*
+    NATURAL JOIN
+    */
+    SELECT <colunas> FROM <tabela> NATURAL JOIN <coluna>
+    -- sendo esta ultima coluna, a coluna compartilhada
+
+    /*
+    JOIN com USING
+    permite indicar a coluna que sera usada para unir os dados das tabelas
+    */
+    SELECT <colunas> FROM <tabela> JOIN <coluna> USING (<coluna>)
+
+    /*
+    JOIN com ON
+    permite indicar mais de uma coluna para unir os dados da tabela
+    */
+    -- ARRUMARRRRR
+    select * from dept;
+    select * from emp;
+    ------
+    --- Sintaxe anterior a ANSI 1999
+    ------
+    --- AMBIGUIDADE ocorre quando o interpretador
+    --- não consegue determinar de qual tabela
+    --- ele deve pegar as informações.
+    --- Isso é resolvido qualificando a coluna com
+    --- o nome da tabela.
+    ------
+    SELECT ENAME, DNAME, SAL, E.DEPTNO, D.DEPTNO
+    FROM EMP E, DEPT D
+    WHERE E.DEPTNO = D.DEPTNO AND
+        SAL > 2900;
+    ------
+    --- SINTAXE ANSI 1999
+    ------
+    ------
+    --- NATURAL JOIN une os dados de tabelas
+    --- baseado em todas as colunas com o mesmo
+    --- nome nas tabelas.
+    ------
+    SELECT ENAME, DNAME
+    FROM EMP NATURAL JOIN DEPT;
+    ------
+    --- JOIN com USING permite indicar a coluna
+    --- que será usada para unir os dados das 
+    --- tabelas
+    ------
+    SELECT ENAME, DNAME
+    FROM EMP JOIN DEPT
+    USING (DEPTNO);
+    ------
+    --- JOIN com ON permite indicar mais de uma
+    --- coluna para unir os dados das tabelas
+    ------
+    SELECT ENAME, DNAME
+    FROM EMP E JOIN DEPT D
+        ON (E.DEPTNO = D.DEPTNO);
+    ------
+    --- EQUIJOIN são consultas onde os valores
+    --- das variáveis devem ser iguais
+    --- NON-EQUIJOIN são consultas que usam faixas
+    --- de valores para unir duas tabelas
+    ------
+    SELECT ENAME, SAL, GRADE
+    FROM EMP JOIN SALGRADE
+        ON (SAL BETWEEN LOSAL AND HISAL);
+    ------
+    --- SELF JOIN são consulta que precisam unir
+    --- dados de uma mesma tabela
+    ------
+    SELECT G.ENAME, E.ENAME
+    FROM  EMP G JOIN EMP E
+        ON (E.MGR = G.EMPNO);
+
+    SELECT G.ENAME || ' É GERENTE DE ' || 
+        E.ENAME "GERENTE E FUNCIONÁRIOS"
+    FROM  EMP G JOIN EMP E
+        ON (E.MGR = G.EMPNO);
+    ------
+    --- LEFT OUTER JOIN lista todos os dados que
+    --- possuem igualdade e os dados da tabela a
+    --- esquerda que não possuem igualdade com a
+    --- tabela a direita
+    -----
+    SELECT ENAME, DNAME
+    FROM EMP LEFT OUTER JOIN DEPT
+        ON (EMP.DEPTNO = DEPT.DEPTNO);
+    ------
+    --- RIGHT OUTER JOIN lista todos os dados que
+    --- possuem igualdade e os dados da tabela a
+    --- direita que não possuem igualdade com a
+    --- tabela a esquerda
+    -----
+    SELECT ENAME, DNAME
+    FROM EMP RIGHT OUTER JOIN DEPT
+        ON (EMP.DEPTNO = DEPT.DEPTNO);
+    ------
+    --- FULL OUTER JOIN lista todos os dados que
+    --- possuem igualdade e os dados da tabela a
+    --- direita que não possuem igualdade com a
+    --- tabela a esquerda e vice-versa
+    -----
+    SELECT ENAME, DNAME
+    FROM EMP FULL OUTER JOIN DEPT
+        ON (EMP.DEPTNO = DEPT.DEPTNO);
+    ------
+    --- CROSS JOIN une cada linha de uma tabela 
+    --- com cada linha de outra tabela
+    ------
+    SELECT ENAME, DNAME
+    FROM EMP CROSS JOIN DEPT;
+```
+
 Comentarios: " **--** " ou " **/* */** " ou " **rem** "
 ``` sql
 -- isto é um comentario
